@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="style/style.css">
+    <title>Course Evaluation</title>
+</head>
+<body>
+    <h1 class="center">Course Evaluation</h1>
+
+    <main class="content-wrap">    
+        <p class="bold"><span class="star">*</span> Required Information</p>
+
+        <p class="bold notQuestion">Please share your thoughts on the course you have just completed. 
+            Your feedback will be used to improve future courses. Thank you!</p>
+
+        <!-- Question 1: Name -->
+        <section class="question">
+            <div class="statement bold"><span class="star">*</span> Please enter your full name</div>
+            <input type="text" id="box" name="name" placeholder="Full Name">
+        </section>
+
+        <!-- Question 2: Email -->
+        <section class="question">
+            <div class="statement bold"><span class="star">*</span> Please enter your email address</div>
+            <input type="text" id="box" name="name" placeholder="Email Adress">
+        </section>
+
+        <!-- Question 3: Class -->
+        <section class="question">
+            <div class="statement bold"><span class="star">*</span> In which course were you enrolled?</div>
+            <select name="course" id="box">
+                <option value="-1">--Select--</option>
+                <option value="cs">Computer Science Fundamentals</option>
+                <option value="cs">Computer Science Programming</option>
+                <option value="sci">Mechanics</option>
+                <option value="sci">Calculus</option>
+                <option value="lit">English</option>
+            </select>
+        </section>
+
+        <!-- Question 4: Evaluation -->
+        <section class="question">
+            <div class="statement bold"><span class="star">*</span> Please evaluate honestly</div>
+
+        <table>
+            <tr>
+              <th></th>
+              <th>Excellent</th>
+              <th>Very Good</th>
+              <th>Good</th>
+              <th>Fair</th>
+              <th>Poor</th>
+              <th>Very Poor</th>
+            </tr>
+            <tr>
+              <td>This course as a while was:</td>
+              <td><input type="radio" id="rating" name="rating"></td>
+              <td><input type="radio" id="rating" name="rating"></td>
+              <td><input type="radio" id="rating" name="rating"></td>
+              <td><input type="radio" id="rating" name="rating"></td>
+              <td><input type="radio" id="rating" name="rating"></td>
+              <td><input type="radio" id="rating" name="rating"></td>
+            </tr>
+            <tr>
+              <td>The course content was:</td>
+              <td><input type="radio" id="rating" name="rating1"></td>
+              <td><input type="radio" id="rating" name="rating1"></td>
+              <td><input type="radio" id="rating" name="rating1"></td>
+              <td><input type="radio" id="rating" name="rating1"></td>
+              <td><input type="radio" id="rating" name="rating1"></td>
+              <td><input type="radio" id="rating" name="rating1"></td>
+            </tr>
+            <tr>
+                <td>The instructor's contribution to the course was:</td>
+                <td><input type="radio" id="rating" name="rating2"></td>
+                <td><input type="radio" id="rating" name="rating2"></td>
+                <td><input type="radio" id="rating" name="rating2"></td>
+                <td><input type="radio" id="rating" name="rating2"></td>
+                <td><input type="radio" id="rating" name="rating2"></td>
+                <td><input type="radio" id="rating" name="rating2"></td>
+            </tr>
+            <tr>
+                <td>The instructor's effectiveness in the teaching the subject matter was:</td>
+                <td><input type="radio" id="rating" name="rating3"></td>
+                <td><input type="radio" id="rating" name="rating3"></td>
+                <td><input type="radio" id="rating" name="rating3"></td>
+                <td><input type="radio" id="rating" name="rating3"></td>
+                <td><input type="radio" id="rating" name="rating3"></td>
+                <td><input type="radio" id="rating" name="rating3"></td>
+            </tr>
+            <tr>
+                <td>Course organization was:</td>
+                <td><input type="radio" id="rating" name="rating4"></td>
+                <td><input type="radio" id="rating" name="rating4"></td>
+                <td><input type="radio" id="rating" name="rating4"></td>
+                <td><input type="radio" id="rating" name="rating4"></td>
+                <td><input type="radio" id="rating" name="rating4"></td>
+                <td><input type="radio" id="rating" name="rating4"></td>
+            </tr>
+            <tr>
+                <td>Clarity of instructor's voice was:</td>
+                <td><input type="radio" id="rating" name="rating5"></td>
+                <td><input type="radio" id="rating" name="rating5"></td>
+                <td><input type="radio" id="rating" name="rating5"></td>
+                <td><input type="radio" id="rating" name="rating5"></td>
+                <td><input type="radio" id="rating" name="rating5"></td>
+                <td><input type="radio" id="rating" name="rating5"></td>
+            </tr>
+            <tr>
+                <td>Explanations by the instructor were:</td>
+                <td><input type="radio" id="rating" name="rating6"></td>
+                <td><input type="radio" id="rating" name="rating6"></td>
+                <td><input type="radio" id="rating" name="rating6"></td>
+                <td><input type="radio" id="rating" name="rating6"></td>
+                <td><input type="radio" id="rating" name="rating6"></td>
+                <td><input type="radio" id="rating" name="rating6"></td>
+            </tr>
+            <tr>
+                <td>Use of class time was:</td>
+                <td><input type="radio" id="rating" name="rating7"></td>
+                <td><input type="radio" id="rating" name="rating7"></td>
+                <td><input type="radio" id="rating" name="rating7"></td>
+                <td><input type="radio" id="rating" name="rating7"></td>
+                <td><input type="radio" id="rating" name="rating7"></td>
+                <td><input type="radio" id="rating" name="rating7"></td>
+            </tr>
+          </table>
+        </section>
+
+
+          <!-- Question 5: Participation -->
+          <section class="question">
+            <div class="statement bold"><span class="star">*</span> Student Participation</div>
+            
+            <div class="participation">
+                <div class="bold choices">The amount of effort you put into this course was:</div>
+
+                <div class="choices">
+                    <input type="radio" name="rating">
+                    <label id="choices">Excellent</label><br>
+                    <input type="radio" name="rating">
+                    <label id="choices">Very Good</label><br>  
+                    <input type="radio" name="rating">
+                    <label id="choices">Good</label><br>
+                    <input type="radio" name="rating">
+                    <label id="choices">Fair</label><br>
+                    <input type="radio" name="rating">
+                    <label id="choices">Poor</label><br>
+                    <input type="radio" name="rating">
+                    <label id="choices">Very Poor</label><br>
+                </div>
+            </div>
+            
+            <div class="participation">
+                <div class="bold choices">On average, how many hours a week did you spend on this course (including class time)?</div>
+
+                <div class="choices">
+                    <input type="radio" name="rating">
+                    <label id="choices">0 - 2</label><br>
+                    <input type="radio" name="rating">
+                    <label id="choices">2 - 5</label><br>  
+                    <input type="radio" name="rating">
+                    <label id="choices">6 - 10</label><br>
+                    <input type="radio" name="rating">
+                    <label id="choices">11 - 14</label><br>
+                    <input type="radio" name="rating">
+                    <label id="choices">15 Up</label><br>
+                </div>
+            </div>
+
+            <div class="participation">
+                <div class="bold choices">What grade do you expect in this course?</div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <input type="radio" name="rating">
+                            <label id="choices">A (90-100)</label><br>
+                        </div>
+                        <div class="col-xs-4">
+                            <input type="radio" name="rating">
+                            <label id="choices">B (80-89)</label><br>
+                        </div>
+                        <div class="col-xs-4">
+                            <input type="radio" name="rating">
+                            <label id="choices">C (70-79)</label><br>
+                        </div>
+                        <div class="col-xs-4">
+                            <input type="radio" name="rating">
+                            <label id="choices">D (60-69)</label><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="participation">
+                <div class="bold choices">Is there any other feedback you would like to give on this class?</div>
+                <textarea name="name" id="feedback" cols="30" rows="10" placeholder="Type Here..."></textarea>              
+            </div>
+
+            <button type="button" class="btn btn-dark">Evaluate Now!</button>
+        </section>
+        
+    </main>
+    
+</body>
+</html>
